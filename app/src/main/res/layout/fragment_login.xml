@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeDaddy_login"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@drawable/bg_relative_nologin" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLogin_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeFields_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lblTitleLogin_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="#6D6D6D"
+                        android:layout_marginBottom="10dp"
+                        android:drawableStart="@drawable/cash"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/baloo_da"
+                        android:text="@string/lblLetsGo_login"
+                        android:layout_marginTop="10dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:id="@+id/lblLoginEmail_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/lblTitleLogin_login"
+                        android:text=" * Entrar com email e senha"
+                        android:textStyle="italic" />
+
+
+                    <EditText
+                        android:id="@+id/edtEmail_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/lblLoginEmail_login"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/bg_edt_global"
+                        android:drawableStart="@drawable/ic_email_red"
+                        android:drawablePadding="6dp"
+                        android:gravity="center|start"
+                        android:hint="@string/lblHintEditEmail_login"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="#656363"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtPassword_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/edtEmail_login"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@id/btnIr_login"
+                        android:background="@drawable/bg_edt_global"
+                        android:drawableStart="@drawable/ic_lock_red"
+                        android:drawablePadding="6dp"
+                        android:gravity="center|start"
+                        android:hint="@string/lblHintEditPassword_login"
+                        android:inputType="numberPassword"
+                        android:maxLength="6"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="#656363"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/btnForget_login"
+                        style="@style/Widget.AppCompat.ActionButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/edtPassword_login"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_button_box"
+                        android:drawableStart="@drawable/ic_baseline_help"
+                        android:gravity="center"
+                        android:drawablePadding="-30dp"
+                        android:paddingStart="55dp"
+                        android:text="@string/lblButtonForgotPassword_login" />
+
+
+                    <View
+                        android:id="@+id/viewSeparatorGoogle_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.5dp"
+                        android:layout_below="@id/btnForget_login"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="#DADADA"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/lblOrGoogle_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnForget_login"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="#fff"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Ou"
+                        android:textStyle="italic" />
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/btnGoogle_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/viewSeparatorGoogle_login"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/btnGoogle_login"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center|bottom">
+
+                        <TextView
+                            android:id="@+id/lblRegister_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:text="@string/lblNotHaveAccount_login"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txtRegister_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@id/lblRegister_login"
+                            android:onClick="actLoginRegister"
+                            android:text="@string/lblRegister_login"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/btnIr_login"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignEnd="@id/edtEmail_login"
+                        android:layout_alignBottom="@id/edtPassword_login"
+                        android:background="@drawable/bg_button_login_register"
+                        android:src="@drawable/ic_arrow_right"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

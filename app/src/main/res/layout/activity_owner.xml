@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeParent_my"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+
+        <ImageButton
+            android:id="@+id/btnBack_owner"
+            android:layout_width="40dp"
+            android:layout_alignTop="@+id/lblTitleWindow_owner"
+            android:layout_alignBottom="@+id/lblTitleWindow_owner"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_button_back"
+            android:onClick="actOwnerParent"
+            android:src="@drawable/ic_arrow_back"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/lblTitleWindow_owner"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@id/btnBack_owner"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/baloo_da"
+            android:text="@string/lblTitleWindow_owner"
+            android:textColor="#6D6D6D"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeResources_owner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnBack_owner"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgResources_owner"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:src="@drawable/ic_undraw_notify_re_65on"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txtTitleResources_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgResources_owner"
+            android:layout_marginTop="10dp"
+            android:text="@string/titleErrorConnection"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtMessageResources_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitleResources_owner"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/messageErrorConnectionOwner"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh_my"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnBack_owner"
+
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerItems_owner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btnBack_owner"
+            android:layout_marginTop="20dp"
+            tools:listitem="@layout/layout_itens_global" />
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fabNew_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:src="@drawable/fab_add"
+        android:onClick="actOwnerNew"
+        android:tint="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        fab:fab_colorNormal="@color/colorPrimary2"
+        app:fab_colorRipple="#5E5E5E"/>
+
+</RelativeLayout>

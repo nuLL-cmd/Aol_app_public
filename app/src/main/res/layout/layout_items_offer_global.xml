@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="SmallSp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="7dp">
+
+        <View
+            android:id="@+id/viewStatus_offer"
+            android:layout_width="4dp"
+            android:visibility="gone"
+            android:background="@drawable/bg_lbl_situation"
+            android:layout_height="160dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeOffer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/roundeImage_offer"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp">
+
+                <ImageView
+                    android:id="@+id/imgSource_offer"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_photo_black_24dp"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/txtItem_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/roundeImage_offer"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/txtDate_offer"
+                android:layout_toEndOf="@id/roundeImage_offer"
+                android:ellipsize="marquee"
+
+                android:singleLine="true"
+
+                android:textColor="#656567"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPhone_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:layout_marginBottom="2dp"
+                android:layout_below="@id/txtItem_offer"
+                android:layout_alignStart="@id/txtItem_offer"
+                android:textColor="#7A7A7A"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/lblStatus_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblStatus_itemOffer"
+                android:textSize="10sp"
+                android:layout_toEndOf="@id/txtPhone_offer"
+                android:layout_marginStart="20dp"
+                android:layout_alignTop="@id/txtPhone_offer"
+                android:visibility="gone"
+                android:layout_alignBottom="@id/txtPhone_offer"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/txtStatus_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:visibility="gone"
+                android:layout_toEndOf="@id/lblStatus_offer"
+                android:layout_marginStart="5dp"
+                android:layout_alignTop="@id/txtPhone_offer"
+                android:layout_alignBottom="@id/txtPhone_offer"
+                android:textColor="#43A047"
+                />
+            <TextView
+                android:id="@+id/txtDate_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_alignTop="@id/txtItem_offer"
+                android:layout_alignBottom="@id/txtItem_offer"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/lblOfferPrice_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblOfferValue_itemOffer"
+                android:textSize="11sp"
+                android:layout_alignTop="@id/txtPriceOffer_layout"
+                android:layout_alignBottom="@id/txtPriceOffer_layout"
+                android:layout_marginEnd="10dp"
+                android:layout_alignStart="@id/txtPhone_offer"
+                android:gravity="center"
+                android:textColor="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/txtPriceOffer_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPhone_offer"
+                android:background="@drawable/bg_lbl_situation"
+                android:layout_toEndOf="@id/lblOfferPrice_offer"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/lblItemPrice_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblItemValue_itemOffer"
+                android:textSize="11sp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/txtPriceOffer_layout"
+                android:layout_alignTop="@id/txtPriceOffer_layout"
+                android:layout_alignBottom="@id/txtPriceOffer_layout"
+                android:gravity="center"
+                android:textColor="@android:color/darker_gray"/>
+
+
+            <TextView
+                android:id="@+id/txtPriceItem_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/txtPriceOffer_layout"
+                android:background="@drawable/bg_lbl_price"
+                android:layout_toEndOf="@id/lblItemPrice_offer"
+                android:layout_marginEnd="10dp"
+                android:layout_alignTop="@id/txtPriceOffer_layout"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="12sp"
+                android:textColor="#fff" />
+
+            <View
+                android:id="@+id/viewOne_offer"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_below="@id/roundeImage_offer"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"/>
+
+            <LinearLayout
+                android:id="@+id/linearBottom_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/viewOne_offer"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCall_offer"
+                    android:layout_width="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/lblButtomContact_itemOffer"
+                    android:fontFamily="@font/roboto_light"
+                    style="@style/Theme.Design.BottomSheetDialog"
+                    android:layout_marginEnd="10dp"
+                    android:paddingStart="30dp"
+                    android:drawablePadding="-20dp"
+                    android:drawableStart="@drawable/ic_baseline_phone_in_talk_24"
+                    android:background="@drawable/bg_button_box"
+                    android:layout_height="40dp"
+                    tools:ignore="RtlSymmetry" />
+                <Button
+                    android:id="@+id/btnRemove_offer"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/lblButtomRemove_itemOffer"
+                    android:drawableStart="@drawable/ic_baseline_delete_outline_24"
+                    android:paddingStart="30dp"
+                    android:drawablePadding="-20dp"
+                    android:fontFamily="@font/roboto_light"
+                    style="@style/Theme.Design.BottomSheetDialog"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_button_box"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>

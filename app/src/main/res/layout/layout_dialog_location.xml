@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/bg_dialog"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lblTitle_splash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="@string/lblLocationInit_dialog"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerCity_location"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/lblTitle_splash"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toStartOf="@id/spinnerUF_location"
+            android:background="@drawable/bg_edt_global"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeProgressCity_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/spinnerCity_location"
+            android:layout_alignTop="@id/spinnerCity_location"
+            android:layout_alignEnd="@+id/spinnerCity_location"
+            android:layout_alignBottom="@+id/spinnerCity_location"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="#fff">
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                style="@style/SpinKitView.Large.ThreeBounce"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="#fff"
+                app:SpinKit_Color="#F4511E" />
+
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/spinnerUF_location"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/spinnerCity_location"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_edt_global"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btnSave_location"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_button_dialog"
+            android:layout_below="@id/spinnerCity_location"
+            android:text="@string/lblButtonOk_dialog"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="50dp"
+            style="@style/Theme.Design.BottomSheetDialog" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        tools:ignore="UselessParent">
+        <RelativeLayout
+            android:id="@+id/relativeDaddy_filterBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/bg_dialog">
+
+
+            <TextView
+                android:id="@+id/txtTitle_filterBottom"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_lbl_title_offer"
+                android:gravity="center"
+                android:text="@string/lblTitleOffer_bottomFilter"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/lblSituation_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/txtTitle_filterBottom"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/lblTitleSituation_bottomFilter" />
+
+            <RadioGroup
+                android:id="@+id/situationGroup_filterBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/lblSituation_filter"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbNew_filterBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/lblRadioButtonUsed_bottomFilter" />
+
+                <RadioButton
+                    android:id="@+id/rbUsed_filterBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/lblRadioButtonNew_bottomFilter" />
+
+                <RadioButton
+                    android:id="@+id/rdAll_filterBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true"
+                    android:text="@string/lblRadioButtonAll_bottomFilter" />
+
+
+            </RadioGroup>
+
+            <View
+                android:id="@+id/viewOne_filterBottom"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@id/situationGroup_filterBottom"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#eee" />
+
+
+            <TextView
+                android:id="@+id/lblLocation_filterBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/viewOne_filterBottom"
+                android:text="@string/lblCountry_bottomFilter" />
+
+            <Spinner
+                android:id="@+id/spinCountry_filterBottom"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#656363"
+                android:layout_below="@id/lblLocation_filterBottom"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_edt_global"
+                android:inputType="numberPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/lblCity_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/spinCountry_filterBottom"
+                android:layout_marginEnd="5dp"
+                android:text="@string/lblCity_bottomFilter" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinCity_filterBottom"
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/lblCity_filter"
+                android:background="@drawable/bg_edt_global"
+                android:inputType="numberPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#656363"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeProgressCity_filterBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/spinCity_filterBottom"
+                android:layout_alignTop="@id/spinCity_filterBottom"
+                android:layout_alignEnd="@id/spinCity_filterBottom"
+                android:layout_alignBottom="@id/spinCity_filterBottom"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="5dp"
+                android:background="#fff">
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    style="@style/SpinKitView.Large.ThreeBounce"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="#fff"
+                    app:SpinKit_Color="@color/colorPrimaryDark2" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewTwo_filterBottom"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@id/spinCity_filterBottom"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="#eee" />
+
+            <CheckBox
+                android:id="@+id/chkEnableCity_filterBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_alignStart="@id/chkCatEnableCat_filterBottom"
+                android:layout_above="@id/spinCity_filterBottom"
+                android:layout_toEndOf="@id/lblCity_filter"
+                android:checked="true" />
+
+
+
+            <TextView
+                android:id="@+id/lblHelpCity_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/chkEnableCity_filterBottom"
+                android:layout_alignTop="@id/lblCity_filter"
+                android:layout_alignBottom="@id/lblCity_filter"
+                android:layout_marginEnd="5dp"
+                android:textSize="10sp"
+                android:text="@string/lblHelpCity_bottomFilter"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/lblCategory_filterBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_below="@id/viewTwo_filterBottom"
+                android:layout_marginBottom="10dp"
+                android:text="@string/lblCategory_bottomFilter" />
+
+            <CheckBox
+                android:id="@+id/chkCatEnableCat_filterBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_below="@id/viewTwo_filterBottom"
+                android:layout_toEndOf="@id/lblCategory_filterBottom"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/lblHelpCat_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/chkCatEnableCat_filterBottom"
+                android:layout_alignTop="@id/lblCategory_filterBottom"
+                android:layout_alignBottom="@id/lblCategory_filterBottom"
+                android:textSize="10sp"
+                android:text="@string/lblHelpCategory_bottomFilter"
+                tools:ignore="SmallSp" />
+
+            <Spinner
+                android:id="@+id/spinCategory_filterBottom"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/lblCategory_filterBottom"
+                android:background="@drawable/bg_edt_global"
+                android:paddingStart="10dp"
+                android:textColor="#656363"
+                android:textSize="14sp" />
+
+
+            <View
+                android:id="@+id/viewTree_filterBottom"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@id/spinCategory_filterBottom"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/lblPublicacao_filterBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/viewTree_filterBottom"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/lblDatePub_bottomFilter" />
+
+            <Spinner
+                android:id="@+id/spinnerDatePub_filterBottom"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@id/btnFilter_filterBottom"
+                android:layout_below="@id/lblPublicacao_filterBottom"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_edt_global"
+                android:inputType="numberPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#656363"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnFilter_filterBottom"
+                style="@style/Theme.Design.BottomSheetDialog"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_alignTop="@id/lblPublicacao_filterBottom"
+                android:layout_marginTop="17dp"
+                android:layout_alignParentEnd="true"
+                android:drawableStart="@drawable/ic_baseline_filter_alt_32"
+                android:background="@drawable/bg_button_box"
+                android:padding="10dp"
+                android:text="@string/lblButtonFilter_bottomFilter" />
+
+
+            <View
+                android:id="@+id/viewFour_filterBottom"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/spinnerDatePub_filterBottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="#eee" />
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

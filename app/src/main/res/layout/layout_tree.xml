@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imgOne_tree"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="join.json"/>
+
+    <TextView
+        android:id="@+id/lblTitle_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/imgOne_tree"
+        android:text="Participe você tambem!"/>
+
+
+    <TextView
+        android:id="@+id/lblDescription_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#838383"
+        android:layout_below="@+id/lblTitle_one"
+        android:text="Crie uma conta e faça login.\n Você ja pode começar a anunciar tambem.\n Da pra liberar aquele espaço e faturar uma graninha!"/>
+
+</RelativeLayout>

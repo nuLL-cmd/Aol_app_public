@@ -1,0 +1,4 @@
+include ':PhotoView-2.3.0'
+include ':silicompressor-2.2.3'
+include 'app'
+rootProject.name='Alimentos&CIA'

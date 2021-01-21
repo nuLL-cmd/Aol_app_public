@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_dialog"
+ android:layout_gravity="bottom"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lblCep_locationCep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Digite o seu CEP"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edtCep_locationCep"
+            android:layout_width="match_parent"
+            android:layout_toStartOf="@id/btnSearch_locationCep"
+            android:layout_height="60dp"
+            android:layout_below="@id/lblCep_locationCep"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_edt_global"
+            android:hint="CEP"
+            android:maxLength="8"
+            android:inputType="number"
+            android:layout_marginStart="15dp"
+            android:drawablePadding="6dp"
+            android:drawableStart="@drawable/ic_baseline_location_city_24"
+            android:layout_marginEnd="15dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="#656363"
+            android:textSize="15sp"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+        <Button
+            android:id="@+id/btnSearch_locationCep"
+            style="@style/Theme.Design.BottomSheetDialog"
+            android:layout_width="110dp"
+            android:layout_alignTop="@id/edtCep_locationCep"
+            android:layout_alignBottom="@id/edtCep_locationCep"
+            android:layout_height="60dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/roboto_light"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:background="@drawable/bg_button_box"
+            android:padding="10dp"
+            android:text="Buscar" />
+
+
+        <TextView
+            android:id="@+id/lblCity_locationCep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Resultado da busca"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/edtCep_locationCep"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtCity_locationCep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="60dp"
+            android:layout_below="@id/lblCity_locationCep"
+            android:paddingStart="10dp"
+            android:textAlignment="center"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imgResource_locationCep"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/location_vector"
+            android:layout_above="@id/btnSave_locationCep"
+            android:layout_centerHorizontal="true"/>
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieSuccess_location"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:lottie_fileName="success.json"
+            android:layout_above="@id/btnSave_locationCep"
+            android:layout_centerHorizontal="true"
+
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            android:visibility="gone"/>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spinkProgress_location"
+            android:layout_width="match_parent"
+            app:SpinKit_Color="@color/colorPrimary2"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:visibility="gone"
+            style="@style/SpinKitView.Small.ThreeBounce"
+            android:layout_alignTop="@id/txtCity_locationCep"
+            android:layout_alignBottom="@id/txtCity_locationCep"
+            android:layout_alignStart="@id/txtCity_locationCep"
+            android:layout_alignEnd="@id/txtCity_locationCep"/>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeProgressCity_locationCep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/edtCep_locationCep"
+            android:layout_alignTop="@id/edtCep_locationCep"
+            android:layout_alignEnd="@+id/edtCep_locationCep"
+            android:layout_alignBottom="@+id/edtCep_locationCep"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:background="#fff">
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                style="@style/SpinKitView.Large.ThreeBounce"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="#fff"
+                app:SpinKit_Color="#F4511E" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSave_locationCep"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_button_dialog"
+            android:layout_below="@id/txtCity_locationCep"
+            android:text="@string/lblButtonOk_dialog"
+            android:textColor="#fff"
+            android:layout_marginStart="50dp"
+            style="@style/Theme.Design.BottomSheetDialog" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

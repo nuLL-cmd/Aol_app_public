@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeParent_fav"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+
+        <ImageButton
+            android:id="@+id/imgDelAll_fav"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@id/lblTitleWindow_fav"
+            android:layout_alignBottom="@id/lblTitleWindow_fav"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:onClick="deleteAllFav"
+            android:background="@drawable/bg_button_back"
+            android:src="@drawable/ic_delete_all"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/btnBack_fav"
+            android:layout_width="40dp"
+            android:layout_alignTop="@+id/lblTitleWindow_fav"
+            android:layout_alignBottom="@+id/lblTitleWindow_fav"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_button_back"
+            android:onClick="actFavParent"
+            android:src="@drawable/ic_arrow_back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/lblTitleWindow_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/baloo_da"
+            android:layout_toEndOf="@id/btnBack_fav"
+            android:layout_marginTop="20dp"
+            android:text="@string/lblTitleWindow_fav"
+            android:textColor="#6D6D6D"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeResources_fav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lblTitleWindow_fav"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgResources_fav"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_undraw_notify_re_65on"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txtTitleResources_fav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgResources_fav"
+            android:layout_marginTop="10dp"
+            android:text="@string/titleErrorConnection"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtMessageResources_fav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitleResources_fav"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/messageErrorConnectionFav"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh_fav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnBack_fav"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerItens_fav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/layout_itens_global" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

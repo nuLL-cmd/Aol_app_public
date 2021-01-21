@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog">
+
+        <TextView
+            android:id="@+id/txtTitle_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/bg_lbl_title_offer"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/lblTitleDialog_dialogOptions"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/btnFinish_options"
+            style="@style/Theme.Design.BottomSheetDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnEdit_options"
+            android:layout_alignStart="@id/btnEdit_options"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button_box"
+            android:drawableStart="@drawable/ic_like_orange"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_light"
+            android:padding="10dp"
+            android:text="@string/lblButtonSale_dialogOptions"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnOffer_options"
+            style="@style/Theme.Design.BottomSheetDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnFinish_options"
+            android:layout_alignStart="@id/btnEdit_options"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button_box"
+            android:drawableStart="@drawable/ic_baseline_local_offer_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_light"
+            android:padding="10dp"
+            android:text="@string/lblButtonOffers_dialogOptions"
+            android:textSize="13sp" />
+
+
+        <Button
+            android:id="@+id/btnEdit_options"
+            style="@style/Theme.Design.BottomSheetDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtTitle_options"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button_box"
+            android:drawableStart="@drawable/ic_edit"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_light"
+            android:padding="10dp"
+            android:text="@string/lblButtonEdit_dialogOptions"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+        android:background="@drawable/bg_dialog"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txtTitle_dialogOffer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_lbl_title_offer"
+            android:gravity="center"
+            android:text="@string/lblTitleDialog_dialogOffer"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh_dialogOffer"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtTitle_dialogOffer"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_dialogOffer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/layout_items_offer_global" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeResources_dialogOffer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txtTitle_dialogOffer"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgResources_dialogOffer"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:alpha="0.8"
+                android:padding="20dp"
+                android:src="@drawable/ic_undraw_surfer_m6jb"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txtTitleResources_dialogOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgResources_dialogOffer"
+                android:layout_marginTop="10dp"
+                android:text="@string/titleNoContentOffer"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtMessageResources_dialogOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitleResources_dialogOffer"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/messageNoContentOffer"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

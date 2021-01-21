@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CardUser_main"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/transparent">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll_main"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:fillViewport="true"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnProfile_main"
+                style="@style/Theme.Design.BottomSheetDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_button_box_placeholder"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:padding="10dp"
+                android:text="@string/lblButtonProfile_main"
+                android:textColor="#cdcdcd" />
+
+            <Button
+                android:id="@+id/btnLances_main"
+                style="@style/Theme.Design.BottomSheetDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bg_button_box_placeholder"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:padding="10dp"
+                android:text="@string/lblButtonLance_details"
+                android:textColor="#cdcdcd" />
+
+
+            <Button
+                android:id="@+id/btnMyAnnouncement_main"
+                style="@style/Theme.Design.BottomSheetDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bg_button_box_placeholder"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:padding="10dp"
+                android:text="@string/lblButtonMyItems_main"
+                android:textColor="#cdcdcd" />
+
+
+            <Button
+                android:id="@+id/btnFavourites_main"
+                style="@style/Theme.Design.BottomSheetDialog"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_button_box_placeholder"
+                android:drawablePadding="10dp"
+
+                android:fontFamily="@font/roboto_light"
+                android:padding="10dp"
+                android:text="@string/lblButtonFavourites_main"
+                android:textColor="#cdcdcd" />
+
+            <Button
+                android:id="@+id/btnProblem_main"
+                style="@style/Theme.Design.BottomSheetDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_button_box_placeholder"
+                android:drawablePadding="10dp"
+
+                android:fontFamily="@font/roboto_light"
+                android:padding="10dp"
+                android:text="@string/lblButtonProblem_main"
+                android:textColor="#cdcdcd" />
+
+            <Button
+                android:id="@+id/btnFeedback_main"
+                style="@style/Theme.Design.BottomSheetDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bg_button_box_placeholder"
+
+                android:drawablePadding="10dp"
+
+                android:fontFamily="@font/roboto_light"
+                android:padding="10dp"
+                android:text="@string/lblButtonFeedBack_main"
+                android:textColor="#cdcdcd" />
+
+
+            <Button
+                android:id="@+id/btnAbout_main"
+
+                style="@style/Theme.Design.BottomSheetDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bg_button_box_placeholder"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:padding="10dp"
+                android:text="@string/lblButtonAbout_main"
+                android:textColor="#cdcdcd" />
+
+
+            <Button
+                android:id="@+id/btnLogout_main"
+                style="@style/Theme.Design.BottomSheetDialog"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_button_box_placeholder"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:padding="10dp"
+                android:text="@string/lblButtonExit_main"
+                android:textColor="#cdcdcd" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    tools:context=".view.activity.LocationActivity">
+
+
+    <TextView
+        android:id="@+id/lblTitleWindow_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15sp"
+        android:drawableStart="@drawable/ic_emoji_boss_48"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/baloo_da"
+        android:text="@string/lblTextLocation_location"
+        android:textColor="#6D6D6D"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animLocation"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/lblTitleWindow_fav"
+        android:layout_above="@+id/btnSetLocation_location"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15sp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="location.json"
+        app:lottie_loop="true" />
+
+
+    <Button
+        android:id="@+id/btnSetLocation_location"
+        style="@style/Theme.Design.BottomSheetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btnMyLocation_location"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:textColor="#6D6D6D"
+        android:background="@drawable/bg_button_box"
+        android:drawableStart="@drawable/ic_baseline_edit_location_24"
+        android:drawablePadding="-30dp"
+        android:onClick="setLocationManual"
+        android:padding="10dp"
+        android:textStyle="bold"
+
+        android:paddingStart="55dp"
+        android:text="@string/lblTextButtomSetLocation_location"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/btnMyLocation_location"
+        style="@style/Theme.Design.BottomSheetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_button_box"
+        android:drawableStart="@drawable/ic_baseline_my_location_24"
+        android:drawablePadding="-46dp"
+        android:textStyle="bold"
+        android:onClick="setLocationCEP"
+        android:textColor="#6D6D6D"
+        android:padding="10dp"
+        android:paddingStart="55dp"
+        android:text="@string/lblButtonGetLocation_location"
+        tools:ignore="RtlSymmetry" />
+
+
+</RelativeLayout>

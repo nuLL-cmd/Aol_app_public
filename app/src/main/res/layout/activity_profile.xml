@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeParent_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".view.activity.ProfileActivity">
+
+
+    <ImageButton
+        android:id="@+id/btnBack_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/lblTitleWindow_profile"
+        android:layout_alignBottom="@+id/lblTitleWindow_profile"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bg_button_back"
+        android:onClick="actProfileMain"
+        android:src="@drawable/ic_arrow_back"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/lblTitleWindow_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/btnBack_profile"
+        android:fontFamily="@font/baloo_da"
+        android:gravity="center"
+        android:text="@string/lblTitleWindow_profile"
+        android:textColor="#6D6D6D"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lblTitleWindow_profile"
+        android:scrollbars="none">
+
+        <RelativeLayout
+
+            android:id="@+id/relativeChildren_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDataUser_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeTitleWindow_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary2"/>
+
+                    <ImageView
+                        android:id="@+id/imgWave_profile"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:rotation="90"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_wave"
+                        android:translationX="-40dp"
+                        android:translationY="10dp"
+                        tools:ignore="ContentDescription" />
+
+                    <Button
+                        android:id="@+id/btnGallery_profile"
+                        style="@style/Widget.AppCompat.ActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_height="40dp"
+                        android:singleLine="true"
+                        android:layout_toEndOf="@id/imgUser_profile"
+                        android:ellipsize="end"
+                        android:layout_above="@id/btnLogoff_profile"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/bg_button_box"
+                        android:drawableEnd="@drawable/ic_baseline_camera_alt_24"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:onClick="pickLib"
+                        android:text="@string/lblButtonGallery_profile" />
+
+
+                    <Button
+                        android:id="@+id/btnLogoff_profile"
+                        style="@style/Widget.AppCompat.ActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_above="@id/btnSave_profile"
+                        android:layout_alignEnd="@id/btnGallery_profile"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignStart="@id/btnGallery_profile"
+                        android:background="@drawable/bg_button_box"
+                        android:drawableEnd="@drawable/ic_baseline_power_settings_new_24"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:onClick="logoffUser"
+                        android:text="@string/lblButtonExit_main" />
+
+                    <Button
+                        android:id="@+id/btnSave_profile"
+                        style="@style/Widget.AppCompat.ActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignEnd="@id/btnGallery_profile"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@id/btnGallery_profile"
+
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/bg_button_box"
+                        android:drawableEnd="@drawable/ic_save"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:onClick="saveUpdates"
+                        android:padding="10dp"
+                        android:text="@string/lblButtonSave_profile"
+                        tools:ignore="RelativeOverlap" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgUser_profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignBottom="@id/btnSave_profile"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ic_new_user"
+                        android:scaleType="centerCrop"
+                        app:civ_border_color="@color/colorPrimary2"
+                        app:civ_border_width="2dp" />
+
+
+                    <com.tomer.fadingtextview.FadingTextView
+                        android:id="@+id/informations_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_toStartOf="@id/imgUser_profile"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        app:texts="@array/tipsProfile"
+                        app:timeout="2000" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeProgress_photo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignBottom="@id/imgUser_profile"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-40dp"
+                        android:background="@drawable/bg_photo_profile"
+                        android:visibility="gone">
+
+                        <com.github.ybq.android.spinkit.SpinKitView
+                            android:id="@+id/spinkProgress_photo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            app:SpinKit_Color="@color/colorPrimaryDark2"
+                            app:SpinKit_Style="ThreeBounce" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/infoData_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardDataUser_profile"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtNameUser_profile"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_marginEnd="15dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="#6D6D6D"
+                    android:textSize="20sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/bg_lbl_total"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/lblSince_details"
+                            android:layout_width="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_baseline_star_24"
+                            android:gravity="center"
+
+                            android:text="@string/lblMemberSince_details" />
+
+                        <TextView
+                            android:id="@+id/txtSince_details"
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:text="25/01/2020"
+                            android:padding="2.5dp"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#6D6D6D"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_lbl_total"
+                    android:padding="15dp">
+
+
+                    <TextView
+                        android:id="@+id/lblActive_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lblSince_details"
+                        android:layout_marginEnd="5dp"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/ic_shopping_bag"
+                        android:gravity="center|start"
+                        android:text="@string/lblTitleItem_profile" />
+
+                    <TextView
+                        android:id="@+id/txtMyItems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:padding="2.5dp"
+                        android:textSize="12sp"
+                        android:background="@drawable/bg_lbl_total"
+                        android:textColor="#6D6D6D"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_lbl_total"
+                    android:padding="15dp">
+
+
+                    <TextView
+                        android:id="@+id/lblAmount_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/lblActive_profile"
+                        android:layout_marginEnd="5dp"
+                        android:layout_below="@+id/lblActive_profile"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/ic_monetization_on_green_24dp"
+                        android:gravity="center|start"
+                        android:text="@string/lblAmount_profile" />
+
+                    <TextView
+                        android:id="@+id/txtAmount_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:padding="2.5dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#6D6D6D" />
+                </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/infUser_profile"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:layout_below="@+id/infoData_profile"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="245dp">
+
+                    <TextView
+                        android:id="@+id/lblActiveAnnounce_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:text="Itens anunciados"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="#6D6D6D"
+                        android:textSize="20sp"/>
+
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeResources_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignTop="@id/swipeRefresh_profile"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/imgResources_profile"
+                            android:layout_width="900dp"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                                                        android:alpha="0.8"
+                            android:src="@drawable/ic_undraw_surfer_m6jb"
+                            tools:ignore="ContentDescription" />
+
+<!--                        <TextView
+                            android:id="@+id/txtTitleResources_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imgResources_profile"
+                            android:layout_marginTop="10dp"
+                            android:text='@string/titleNoContent'
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />-->
+
+                        <TextView
+                            android:id="@+id/txtMessageResources_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imgResources_profile"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/messageNoContentOwner"
+                            android:textAlignment="center"
+                            android:textSize="12sp" />
+
+
+                    </RelativeLayout>
+
+                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                        android:id="@+id/swipeRefresh_profile"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/lblActiveAnnounce_profile"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerItens_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/layout_itens_profile" />
+
+                    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/infoMore_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infUser_profile"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeFields_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/lblSingin_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="#6D6D6D"
+                        android:textStyle="bold"
+                        android:text="@string/lblTitleCategory_profile"
+                        android:textSize="15sp" />
+
+
+                    <Spinner
+                        android:id="@+id/spinCategory_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/lblSingin_register"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_edt_global"
+                        android:inputType="numberPassword"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/lblPersonData_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinCategory_profile"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:text="@string/lblTitleContact_profile"
+                        android:textStyle="bold"
+                        android:textColor="#6D6D6D"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtName_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/lblPersonData_register"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_edt_disable_global"
+                        android:drawableStart="@drawable/ic_person_red"
+                        android:drawablePadding="6dp"
+                        android:enabled="false"
+                        android:hint="@string/lblHintEditName_profile"
+                        android:inputType="text"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="#656363"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtLastName_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/edtName_profile"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_edt_disable_global"
+                        android:drawableStart="@drawable/ic_text_name"
+                        android:drawablePadding="6dp"
+                        android:enabled="false"
+                        android:hint="@string/lblHintEditLastName_profile"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="#656363"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtEmail_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/edtLastName_profile"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_edt_disable_global"
+                        android:drawableStart="@drawable/ic_email_red"
+                        android:drawablePadding="6dp"
+                        android:enabled="false"
+                        android:hint="@string/lblHintEditEmail_profile"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="#656363"
+
+                        android:textSize="15sp" />
+
+                    <com.santalu.maskedittext.MaskEditText
+                        android:id="@+id/edtPhone_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/edtEmail_profile"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_edt_global"
+                        android:drawableStart="@drawable/ic_phone_in_orange"
+                        android:drawablePadding="6dp"
+                        android:hint="@string/lblHintEditPhone_profile"
+                        android:inputType="number"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="#656363"
+                        android:textSize="15sp"
+                        app:met_mask="(##)#####-####" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/infoLocation_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infoMore_profile"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="5dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lblLocation_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:text="@string/lblTitleLocation_profile"
+                        android:textColor="#6D6D6D"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/spinnerCity_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/lblLocation_register"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toStartOf="@id/spinnerUF"
+                        android:background="@drawable/bg_edt_global"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="#656363"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/relCityProgress_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignStart="@+id/spinnerCity_profile"
+                        android:layout_alignTop="@id/spinnerCity_profile"
+                        android:layout_alignEnd="@+id/spinnerCity_profile"
+                        android:layout_alignBottom="@+id/spinnerCity_profile"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#fff">
+
+                        <com.github.ybq.android.spinkit.SpinKitView
+                            style="@style/SpinKitView.Large.ThreeBounce"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="#fff"
+                            app:SpinKit_Color="@color/colorPrimaryDark2" />
+
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/spinnerUF"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_alignTop="@id/spinnerCity_profile"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/bg_edt_global"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="#656363"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

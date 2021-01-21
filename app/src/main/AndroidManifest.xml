@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.automatodev.loa">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.LOCATION_HARDWARE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_image_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_image_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.activity.AboutActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".view.activity.AboutActivity"/>
+
+        <activity android:name=".view.activity.RegisterActivity"
+            android:theme="@style/AppTheme2"/>
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.activity.FavouriteActivity"
+            android:parentActivityName=".view.activity.FavouriteActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.activity.PhotoActivity"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".view.activity.OwnerActivity"
+            android:parentActivityName=".view.activity.OwnerActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.activity.LocationActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.activity.AccountActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".view.activity.NewActivity"
+            android:parentActivityName=".view.activity.NewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.activity.DetailsActivity"
+            android:parentActivityName=".view.activity.DetailsActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.activity.ProfileActivity"
+            android:parentActivityName=".view.activity.ProfileActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="Your android API_KEY" />
+    </application>
+
+</manifest>

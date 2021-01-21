@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgItem_layout"
+                android:layout_width="160dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/ic_photo_black_24dp"
+                android:layout_height="130dp"
+                tools:ignore="ContentDescription" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTitleItem_layout"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtUf_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:layout_below="@id/txtDate_layout"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:drawableStart="@drawable/ic_location_red"
+                android:drawablePadding="5dp"
+                android:ellipsize="marquee"
+                android:textColor="#FF9800"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtDate_layout"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitleItem_layout"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/ic_date_range_indigo_24dp"
+                android:drawablePadding="5dp"
+                android:gravity="center|start"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPrice_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:padding="7dp"
+                android:text="R$ 350,00"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/btnDelete_layout"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_button_back"
+                android:src="@drawable/ic_delete"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txtViews_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/txtPrice_layout"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:drawableStart="@drawable/ic_visibility"
+                android:drawablePadding="10dp"
+                android:gravity="center|start"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,392 @@
+<resources>
+    <string name="app_name">AoL app</string>
+
+    <string name="string_about">
+        AoL é uma plataforma gratuita, para a publicação de anúncios de produtos novos e usados.
+\nCom ao AoL tudo é muito prático, fácil e intuitivo, você não precisa logar no app, ou criar conta para visualizar anúncios de outros usuários e nem para fechar um negócio,
+porém, fazendo parte da nossa comunidade, você também pode anunciar seus produtos e desapegar de forma rápida, pode salvar e gerenciar anúncios favoritos, assim como também
+pode destacar seu anúncio, fazendo com que outros usuários vejam seu anúncios no topo da lista.
+\nNo AoL, não solicitamos dados sensíveis, apenas o básico para uma comunicação entre anunciante e cliente, afim de manter a segurança dos dados de ambas as partes.
+    </string>
+
+    <string name="clientId">Your clientID</string>
+
+
+    <string-array name="states">
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
+
+    <string-array name="dateFilter">
+        <item>Todos</item>
+        <item>Mais recentes</item>
+        <item>Mais antigos</item>
+    </string-array>
+
+    <string-array name="security">
+        <item>Para sua segurança, negocie em lugares públicos e movimentados!</item>
+        <item>Desconfie de preços muito a baixo do mercado!</item>
+        <item>Na dúvida, feche o negócio sempre acompanhado de pessoas conhecidas.</item>
+    </string-array>
+
+    <string-array name="tipsFav">
+        <item>Aqui você pode gerenciar seus favoritos</item>
+        <item>Use o botão deletar nos cards para deletar individualmente</item>
+        <item>Use o botão deletar no topo da janela para deletar toda a coleção</item>
+    </string-array>
+
+    <string-array name="tipsProfile">
+        <item>Personalize \nseu perfil \ncom a sua cara!</item>
+        <item>Isso promove \nconfiabilidade \nno anúncio</item>
+        <item>E aumenta suas \nchances de venda.</item>
+    </string-array>
+
+    <string-array name="tipsMy">
+        <item>Aqui você gerencia os seus anúncios</item>
+        <item>Pressione sobre cada anúnico para abrir as opções</item>
+        <item>Você pode editar, excluir ou destacar seu anúncio</item>
+    </string-array>
+
+
+    <string name="textDialogLocation"><p>"Para usar este recurso, você precisa ativar sua localização!</p>
+        <p>Isso se faz necessário, para manter a confiabilidade do anúncio</p>
+        <p>e a segurança dos usuarios da plataforma.</p></string>
+
+    <string name="titleDialogLocation">Localização necessária</string>
+
+    <string name="txtBtnNoDialogLocation">Me ajude!!</string>
+    <string name="txtBtnYesDialogLocation">Ok! Eu sei o que fazer!</string>
+
+    <string name="txtBtnYesDialog">Sim</string>
+    <string name="txtBtnCancelDialog">Cancelar</string>
+
+    <string name="titleDialogAllFav">Exclusão</string>
+    <string name="textDialogAllFav">Deseja excluir a sua coleção de favoritos?</string>
+
+    <string name="titleDialogFav">"Excluir anúncio "</string>
+    <string name="textDialogFav">Deseja excluir este anúncio da sua lista de favoritos?</string>
+    <string name="titleDialogLogoff">Fazer logout no aplicativo</string>
+    <string name="textDialogLogoff">Você deseja realmente sair?</string>
+
+    <string name="saudation">Ola! <strong>Marco</strong></string>
+
+    <string name="messageErrorConnectionFav">Não foi possivel obter sua lista de favoritos. \nTente atualizar a página</string>
+    <string name="messageErrorConnectionOwner">Não foi possivel obter sua lista de anúncios. \nTente atualizar a página</string>
+    <string name="messageErrorConnectionMain">Não foi possivel obter lista de anúncios. \nTente atualizar a página</string>
+
+    <string name="titleErrorConnection">Ops, problemas de conexão</string>
+    <string name="titleNoContent">Tudo certo por aqui!</string>
+    <string name="titleNoContentMain">Ops! Parece que não temos resultados.</string>
+    <string name="titleNoContentOffer">Tudo nos conformes!</string>
+
+    <string name="messageNoContentFav">Adicione alguns favoritos para ver mais tarde, mas seja rapido! \nTem sempre alguém comprando :D</string>
+    <string name="messageNoContentOwner">Começe a anúnciar agora mesmo! É rapído, facil \ne você ainda vai levantar aquela grana!</string>
+    <string name="messageNoContentMain">Seja o primeiro desta região a anunciar um produto \ne deixe o resto com a gente!</string>
+    <string name="messageNoContentOffer">Vamos la! Dê seu lance! Vamos ver no que vai dar!</string>
+
+    <string name="txtDialog_dialog">Obrigado por usar nossa plataforma! \nDeseja deletar o anúncio?</string>
+    <string name="txtTitle_dialog">Legal</string>
+    <string name="descLance">Faça seu lance! O valor será enviado ao vendedor, e se tudo der certo, o produto será seu.</string>
+    <string name="lbl_title_offer">Você ofertou</string>
+    <string name="lblDescription_details">Descrição</string>
+    <string name="lblLanceTitle_details">Leilão</string>
+    <string name="lblContactTitle_details">Contato</string>
+    <string name="lblLocationTitle_details">Localização</string>
+    <string name="lblSecurityTitle_details">Seugurança</string>
+    <string name="lblWarning_details">Irregularidades no anuncio?</string>
+    <string name="lblButtonWarning_details">Denuncie</string>
+    <string name="lblButtonLance_details">Lance</string>
+    <string name="lblTitleWindow_details">Detalhes</string>
+    <string name="lblMemberSince_details">Usuario desde</string>
+    <string name="lblTitleWindow_fav">Favoritos</string>
+    <string name="lblTextLocation_location">Quase pronto!</string>
+    <string name="lblTextButtomSetLocation_location">Escolher localização</string>
+    <string name="lblButtonGetLocation_location">Obter localização</string>
+    <string name="lblTitleWindow_new">Novo</string>
+    <string name="lblTitleImages_new">Toque nas imagens para selecionar as fotos</string>
+    <string name="lblTitleCategory_new">Selecione uma categoria</string>
+    <string name="lblTitleSituation_new">O item é</string>
+    <string name="lblTitleDetails_new">Insira um titulo e um preço para o anúncio</string>
+    <string name="lblHintEditTitle_new">Título</string>
+    <string name="lblTitleDescription_new">Crie uma descriçao(Min. de 20 caracteres)</string>
+    <string name="lblHintEditDescription_new">Descrição</string>
+    <string name="textEditDescription_new">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel enim bibendum, scelerisque metus et, varius ligula. Quisque commodo lacus eget neque condimentum, tempus efficitur sapien lacinia. Quisque condimentum sem in leo vestibulum, lacinia pulvinar tellus pellentesque. Vestibulum semper arcu nec dictum consectetur. Fusce consectetur ante id lectus gravida posuere in a diam. Nulla cursus odio at augue tincidunt, id elementum ipsum finibus. Duis dignissim risus in nibh rhoncus, et pretium metus fringilla.</string>
+    <string name="lblTitleContact_new">Revise seu contato</string>
+    <string name="lblHintEditPhone_new">Celular</string>
+    <string name="lblTitleLocation_new">Sua cidade (com base no seu perfil)</string>
+    <string name="lblButtonPublication_new">Publicar</string>
+    <string name="lblRadioButtonUsed_new">Usado</string>
+    <string name="lblRadioButtonNew_new">Novo</string>
+    <string name="lblTitleWindow_owner">Meus anúncios</string>
+    <string name="lblTitleWindow_profile">Conta</string>
+    <string name="lblButtonGallery_profile">Galeria</string>
+    <string name="lblButtonSave_profile">Salvar</string>
+    <string name="lblTitleItem_profile">Anúncios ativos:</string>
+    <string name="lblAmount_profile">Total vendido:</string>
+    <string name="lblTitleCategory_profile">Selecione uma categoria de sua preferência</string>
+    <string name="lblTitleContact_profile">Seus dados de contato</string>
+    <string name="lblHintEditName_profile">Nome</string>
+    <string name="lblHintEditLastName_profile">Sobrenome</string>
+    <string name="lblHintEditEmail_profile">E-mail</string>
+    <string name="lblHintEditPhone_profile">Celular</string>
+    <string name="lblTitleLocation_profile">Sua localização</string>
+    <string name="lblLogo_splash">Anúncios onLine</string>
+    <string name="lblVersion_splash">Versão 1.0.12</string>
+    <string name="lblTitleWindow_about">Sobre</string>
+    <string name="lblLogo_about">Anúncios onLine</string>
+    <string name="lblVersion_about">1.0.12</string>
+    <string name="lblDev_about">automatoDev</string>
+    <string name="lblButtonForgotPassword_login">Esqueci minha senha</string>
+    <string name="lblNotHaveAccount_login">Não possui conta?</string>
+    <string name="lblRegister_login">Registre-se</string>
+    <string name="lblButtonGoogle_login">Entrar com o Google</string>
+    <string name="lblButtonFacebook_login">Entrar com o Facebook</string>
+    <string name="lblHintEditPassword_login">Senha</string>
+    <string name="lblHintEditEmail_login">E-mail</string>
+    <string name="lblPresentationNoLogin_main">Faça login e aproveite o que temos \nde melhor para você</string>
+    <string name="lblButtonIWant_main">Eu quero!</string>
+    <string name="lblButtonProfile_main">Meu perfil</string>
+    <string name="lblButtonLances_main">Meus lances</string>
+    <string name="lblButtonMyItems_main">Meus anúncios</string>
+    <string name="lblButtonFavourites_main">Meus favoritos</string>
+    <string name="lblButtonProblem_main">Tenho um problema</string>
+    <string name="lblButtonFeedBack_main">Avalie-nos</string>
+    <string name="lblButtonAbout_main">Sobre o AoL</string>
+    <string name="lblButtonExit_main">Sair</string>
+    <string name="lblButtonFilter_main">Filtro</string>
+    <string name="lblHintEditSearch_main">Insira sua pesquisa aqui</string>
+    <string name="lblWelcome_register">Bem-vindo!</string>
+    <string name="lblLetsGo_login">Vamos la!</string>
+    <string name="lblHintEditName_register">Nome</string>
+    <string name="lblHintEditLastName_register">Sobrenome</string>
+    <string name="lblHintEditEmail_register">E-mail</string>
+    <string name="lblHintEditPhone_register">Celular</string>
+    <string name="lblHintEditPassword_register">Senha</string>
+    <string name="lblIHaveAccount_register">Já possui uma conta?</string>
+    <string name="lblLogin_register">Faça login</string>
+    <string name="lblLocationInit_dialog">Vamos configrar sua localização antes de começar!</string>
+    <string name="lblButtonOk_dialog">Tudo certo!</string>
+    <string name="lblTitleDialog_dialogOffer">Você ofertou</string>
+    <string name="lblTitleDialog_dialogOptions">Opções do anúncio</string>
+    <string name="lblButtonSale_dialogOptions">Já vendi!</string>
+    <string name="lblButtonOffers_dialogOptions">Ver ofertas</string>
+    <string name="lblButtonEdit_dialogOptions">Editar</string>
+    <string name="lblTitleOffer_bottomFilter">Filtros básicos</string>
+    <string name="lblTitleSituation_bottomFilter">Situação</string>
+    <string name="lblRadioButtonUsed_bottomFilter">Novo</string>
+    <string name="lblRadioButtonNew_bottomFilter">Usado</string>
+    <string name="lblRadioButtonAll_bottomFilter">Todos</string>
+    <string name="lblCountry_bottomFilter">Estado</string>
+    <string name="lblCity_bottomFilter">Cidade</string>
+    <string name="lblHelpCity_bottomFilter">* Desmarque para ignorar as cidades</string>
+    <string name="lblCategory_bottomFilter">Categoria</string>
+    <string name="lblHelpCategory_bottomFilter">* Desmarque para ignorar as categorias</string>
+    <string name="lblDatePub_bottomFilter">Data da publicação</string>
+    <string name="lblButtonFilter_bottomFilter">Filtrar</string>
+    <string name="lblOfferValue_itemOffer">Oferta:</string>
+    <string name="lblItemValue_itemOffer">Produto:</string>
+    <string name="lblStatus_itemOffer">Status:</string>
+    <string name="lblButtomContact_itemOffer">Contato</string>
+    <string name="lblButtomRemove_itemOffer">Remover</string>
+    <string name="lblTitleProblem_sendEmail">Tenho um problema</string>
+    <string name="lblSendTo_sendEmail">Enviar para:</string>
+    <string name="lblEmailAdress_sendEmail">matshitasata@gmail.com</string>
+    <string name="lblButtonSend_sendEmail">Enviar</string>
+    <string name="lblTitleEmail_sendEmail">Uma prévia do seu problema</string>
+    <string name="lblHintEditTitle_sendEmail">Título</string>
+    <string name="lblTitleMessage_sendEmail">Nos conte o que realmente houve:</string>
+    <string name="lblHintEditMessage_sendEmail">Mensagem</string>
+
+    <string name="slide_4_checkbox_label">Concordo com os termos e condições de uso</string>
+    <string name="slide_4_title">Termos e condições de uso</string>
+    <string name="salvar">Aceitar</string>
+    <string name="slide_4_content">
+        Última atualização em 10 de Outubro de 2020\n\n
+
+            Tipos de dados coletados\n\n
+
+            Entre os tipos de dados pessoais que este aplicativo recolhe, por si só ou por meio de terceiros, estão: e-mail, nome, sobrenome, cookies e dados de uso.\n\n
+
+            Outros dados pessoais recolhidos podem ser descritos em outras seções desta política de privacidade ou pelo texto explicativo específico apresentado no contexto da coleta de dados.\n\n
+
+            Os dados pessoais podem ser livremente fornecidos pelo usuário, ou coletados automaticamente quando se utiliza este aplicativo.\n\n
+
+            Qualquer uso de cookies - ou de outras ferramentas de rastreamento - pelo aplicativo ou pelos proprietários dos serviços terceirizados utilizados por ele, salvo indicação em contrário, servem para identificar os usuários e lembrar as suas preferências, com o único propósito de fornecer os serviços requeridos por eles.\n\n
+
+            O não fornecimento de determinados dados pessoais pode tornar impossível para este aplicativo prestar os seus serviços.\n\n
+
+            O usuário assume a responsabilidade pelos dados pessoais de terceiros publicados ou compartilhados por meio deste serviço (este aplicativo) e confirma que tem o consentimento da parte terceira para fornecer dados para o proprietário.\n\n
+
+            Modo e local de processamento dos dados\n\n
+
+            Método de processamento\n\n
+
+            O controlador de dados processa os dados de usuários de forma adequada e tomará as medidas de segurança adequadas para impedir o acesso não autorizado, divulgação, alteração ou destruição não autorizada dos dados.\n\n
+
+            O processamento de dados é realizado utilizando computadores e /ou ferramentas de TI habilitadas, seguindo procedimentos organizacionais e meios estritamente relacionados com os fins indicados. Além do controlador de dados, em alguns casos, os dados podem ser acessados por certos tipos de pessoas envolvidas com a operação do aplicativo (administração, vendas, marketing, administração legal do sistema) ou pessoas externas (como fornecedores terceirizados de serviços técnicos, carteiros, provedores de hospedagem, empresas de TI, agências de comunicação) nomeadas, quando necessário, como processadores de dados por parte do proprietário. A lista atualizada destas partes pode ser solicitada a partir do controlador de dados a qualquer momento.\n\n
+
+            Lugar\n\n
+
+            Os dados são processados nas sedes de operação do controlador de dados, e em quaisquer outros lugares onde as partes envolvidas com o processamento estejam localizadas. Para mais informações, por favor, entre em contato com o controlador de dados.\n\n
+
+            Período de conservação\n\n
+
+            Os dados são mantidos pelo período necessário para prestar o serviço solicitado pelo usuário, ou pelos fins descritos neste documento, e o usuário pode solicitar ao controlador de dados para que os suspendam ou os removam.\n\n
+
+            O Uso dos dados coletados\n\n
+
+            Os dados relativos ao usuário são coletados para permitir que o proprietário forneça os serviços, bem como para os seguintes propósitos: contatar o usuário, comentário de conteúdo e interação com redes sociais e plataformas externas.\n\n
+
+            Os dados pessoais utilizados para cada finalidade estão descrito nas seções específicas deste documento.\n\n
+
+            Informações detalhadas sobre o processamento de dados pessoais\n\n
+
+            Os dados pessoais são recolhidos para os seguintes fins e utilizando os seguintes serviços:\n\n
+
+            Interação com redes sociais e plataformas externas\n\n
+
+            Esses tipos de serviços permitem a interação com as redes sociais ou outras plataformas externas diretamente a partir das páginas deste serviço (este aplicativo). A interação e as informações obtidas por este aplicativo estão sempre sujeitas às configurações de privacidade do usuário em cada rede social. Se um serviço que permite a interação com as redes sociais estiver instalado poderá coletar dados de tráfego para as páginas, onde o serviço esteja instalado, mesmo quando os usuários não estiverem usando os mesmos.\n\n
+
+            Como denunciar um anúncio no AoL?\n\n
+
+            Com o objetivo de manter a integridade da nossa plataforma, disponibilizamos um botão de denúncia que permite ao usuário informar um anúncio que não está de acordo com os termos de uso assim que o programa é instalado do AoL, ou que proporcionem uma má experiência, como:\n\n
+
+            - Preços enganosos ou que não correspondam ao real;\n
+            - Localização ou região errada;\n
+            - Anúncios repetidos;\n
+            - Anúncios de trote ou brincadeiras indevidas;\n
+            - Produtos e serviços proibidos ou ilegais;\n
+            - Anúncios com suspeita de fraude.\n\n
+
+            Lembre-se!\n\n
+
+            As denúncias são sempre anônimas e podem ser feitas pelo aplicativo da AoL, na tela de detalhes do anúncio:\n\n
+
+            A maior parte das denúncias é tratada em 24h.\n\n
+
+
+            Contatar o usuário\n\n
+
+            Lista de endereçamento ou boletim informativo (este aplicativo)\n\n
+
+            Ao registar-se na lista de endereçamento ou no boletim informativo, o endereço de e-mail do usuário será adicionado à lista de contatos daqueles que podem receber mensagens de e-mail que contenham informações de natureza comercial ou promocional sobre este Aplicativo. O seu endereço de e-mail também poderá ser adicionado a esta lista, como resultado de sua inscrição neste serviço (este aplicativo).\n\n
+
+            Dados pessoais coletados: e-mail.\n\n
+
+            Formulário de contato (este aplicativo)\n\n
+
+            Ao preencher o formulário de contato com os seus dados, os usuários autorizam este aplicativo a usar esses detalhes para responder aos pedidos de informações, cotação ou qualquer outro tipo de pedido como indicado pelo título do formulário.\n\n
+
+            Dados pessoais coletados: e-mail, nome e sobrenome.\n\n
+
+            Informações adicionais sobre a coleta e processamento de dados\n\n
+
+            Ação jurídica\n\n
+
+            Os dados pessoais dos usuários podem ser utilizados para fins jurídicos pelo controlador de dados em juízo ou nas etapas conducentes à possível ação jurídica decorrente de uso indevido deste serviço (este aplicativo) ou dos serviços relacionados.\n\n
+
+            O usuário declara estar ciente de que o controlador dos dados poderá ser obrigado a revelar os dados pessoais mediante solicitação das autoridades governamentais.\n\n
+
+            Informações adicionais sobre os dados pessoais do usuário\n\n
+
+            Além das informações contidas nesta política de privacidade, este aplicativo poderá fornecer ao usuário informações adicionais e contextuais sobre os serviços específicos ou a coleta e processamento de dados pessoais mediante solicitação.\n\n
+
+            Logs do sistema e manutenção\n\n
+
+            Para fins de operação e manutenção, este aplicativo e quaisquer serviços de terceiros poderão coletar arquivos que gravam a interação com este aplicativo (logs do sistema) ou usar, para este fim, outros dados Pessoais (tais como o endereço IP).\n\n
+
+            As informações não contidas nesta política\n\n
+
+            Mais detalhes sobre a coleta ou processamento de dados pessoais podem ser solicitados ao controlador de dados, a qualquer momento. Favor ver as informações de contato no início deste documento.\n\n
+
+            Os direitos dos usuários\n\n
+
+            Os usuários têm o direito de, a qualquer tempo, consultar o controlador de dados para saber se os seus dados pessoais foram armazenados e saber mais sobre o conteúdo e origem, verificar a sua exatidão ou para pedir que sejam complementados, cancelados, atualizados ou corrigidos, ou que sejam transformados em formato anônimo ou bloquear quaisquer dados mantidos em violação da lei, bem como se opor ao seu tratamento por quaisquer todas as razões legítimas. Os pedidos devem ser enviados para o controlador de dados usando a informação de contato fornecida anteriormente.\n\n
+
+            Este aplicativo não suporta pedidos de "Não me rastreie".\n\n
+
+            Para determinar se qualquer um dos serviços de terceiros que utiliza honram solicitações de "Não me rastreie", por favor, leia as políticas de privacidade.\n\n
+
+            Mudanças nesta política de privacidade\n\n
+
+            O controlador de dados se reserva o direito de fazer alterações nesta política de privacidade a qualquer momento, mediante comunicação aos seus usuários nesta página. É altamente recomendável que esta página seja consultada várias vezes em relação à última modificação descrita na parte inferior. Se o Usuário não concorda com qualquer das alterações da política de privacidade, o usuário deve cessar o uso deste serviço (este aplicativo) e pode solicitar ao controlador de dados que apague os dados pessoais dele. Salvo disposição em contrário, a atual política de privacidade se aplica a todos os dados pessoais dos usuários que o controlador de dados tiver.\n\n
+
+            Definições e referências jurídicas\n\n
+
+            Dados pessoais (ou dados)\n\n
+
+            Quaisquer informações relativas a uma pessoa física, pessoa jurídica, instituição ou associação, as quais sejam, ou possam ser identificadas, mesmo que indiretamente, por referência a quaisquer outras informações, incluindo um número de identificação pessoal.\n\n
+
+            Dados de uso\n\n
+
+            As informações coletadas automaticamente a partir deste serviço (ou serviços de terceiros contratados neste serviço (este aplicativo), que podem incluir: os endereços IP ou nomes de domínio dos computadores utilizados pelos usuários que utilizam este aplicativo, os endereços URI (Identificador Uniforme de Recurso), a data e hora do pedido, o método utilizado para submeter o pedido ao servidor, o tamanho do arquivo recebido em resposta, o código numérico que indica o status do servidor de resposta (resultado positivo, erro , etc.), o país de origem, as características do navegador e do sistema operacional utilizado pelo usuário, os vários detalhes de tempo por visita (por exemplo, o tempo gasto em cada página dentro do aplicativo) e os detalhes sobre o caminho seguido dentro da aplicação, com especial referência à sequência de páginas visitadas e outros parâmetros sobre o sistema operacional do dispositivo e/ou ambiente de TI do Usuário.\n\n
+
+            Usuário\n\n
+
+            A pessoa que usa este aplicativo que deverá coincidir com ou estar autorizada pelo titular dos dados a quem os dados pessoais se referem.\n\n
+
+            Titular dos dados\n\n
+
+            A pessoa jurídica ou física a quem os dados pessoais se referem.\n\n
+
+            Processador de dados (ou supervisor de dados)\n\n
+
+            A pessoa física, pessoa jurídica, a administração pública ou qualquer outro órgão, associação ou organização autorizada pelo controlador de dados para o processamento dos dados pessoais em conformidade com esta política de privacidade.\n\n
+
+            Controlador de dados (ou proprietário)\n\n
+
+            A pessoa física, pessoa jurídica, administração pública ou qualquer outra entidade, associação ou organização com direitos, também em conjunto com outro controlador dos dados, para tomar decisões sobre as finalidades e os métodos de processamento de dados pessoais e os meios utilizados, incluindo medidas de segurança relativas ao funcionamento e ao uso deste serviço. O controlador de dados, a menos que seja especificado de outra forma, é o proprietário deste serviço (este aplicativo).\n\n
+
+            Este aplicativo\n\n
+
+            A ferramenta de hardware ou software pela qual os dados pessoais do usuário são coletados.\n\n
+
+            Cookie\n\n
+
+            Pequenas unidades de dados armazenados no dispositivo do usuário.\n\n
+
+            Informação jurídica\n\n
+
+            Aviso aos usuários do brasil: esta declaração dos termos e condições uso foi elaborada em cumprimento das obrigações nos termos do art. n.10 da Diretiva 95/46/CE, e de acordo com as disposições da Diretiva 2002/58/CE, tal como revisto pela Diretiva 2009/136/CE, sobre o assunto de Cookies.\n\n
+
+            Os termos e condições uso é apenas sobre este Aplicativo.\n\n
+
+
+
+    </string>
+    <string name="lblTitleRecovery_recovery">Esqueci minha senha</string>
+    <string name="str_nocad_login_google_message">Você fez login usando sua conta Google, porém  precisamos que nos forneça aguns dados basicos! Nada especail, é a penas a sua identificação no app :D</string>
+    <string name="str_nocad_login_google_title">Login com o Google</string>
+    <string name="str_nocad_login_google_exit">Sair do app</string>
+    <string name="str_nocad_login_google_go">Ok vamos lá</string>
+    <string name="str_no_terms_message">Ops...! Você não concordou com nossos termos e condições. Por favor, retorne a primeira pagina, leia com atenção e marque a caixa de seleção para continuar.</string>
+    <string name="str_no_tems_understand">Entendi</string>
+    <string name="str_no_terms_exit">Sair do app</string>
+    <string name="str_no_terms_title">Termos e condições</string>
+
+</resources>

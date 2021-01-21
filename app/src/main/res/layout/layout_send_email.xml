@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    tools:ignore="Autofill,TextFields"
+    android:gravity="bottom">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitle_dialogOffer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_lbl_title_offer"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/lblTitleProblem_sendEmail"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <Button
+                    android:id="@+id/btnSend_layoutSend"
+                    style="@style/Theme.Design.BottomSheetDialog"
+                    android:layout_width="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_button_box"
+                    android:padding="10dp"
+                    android:text="@string/lblButtonSend_sendEmail"
+                    android:drawableStart="@drawable/ic_baseline_email_24" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_undraw_newsletter_re_wrob" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/lblTitleEmail_sendEmail"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/edtSubject_layoutSend"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:singleLine="true"
+                android:background="@drawable/bg_edt_global"
+                android:drawableStart="@drawable/ic_text_name"
+                android:drawablePadding="10dp"
+                android:hint="@string/lblHintEditTitle_sendEmail"
+                android:padding="10dp"
+                android:textColor="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/lblTitleMessage_sendEmail"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/edtMessage_layoutSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_edt_global"
+                android:drawablePadding="10dp"
+                android:hint="@string/lblHintEditMessage_sendEmail"
+                android:maxLength="200"
+                android:paddingStart="10dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="20dp"
+                android:scrollbars="vertical"
+                android:textColor="@android:color/darker_gray" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
