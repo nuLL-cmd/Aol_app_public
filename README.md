@@ -1,12 +1,14 @@
 # AoL - Anuncios onLine
 
-Uma plataforma de vendas de artigos usados, para aqueles que querem se desfazer de produtos que não ha mais utilidade no dia a dia
+A used goods sales platform, for those who want to dispose of products that are no longer useful in their daily lives
 
-Funções:
+##Original project is private##
 
-Usuario (Não logado)
-* Cadastro usando email e senha
-* Login utlizando sua conta do Facebook ou Google
+Functions:
+
+User (Not logged in)
+* Registration using email and password
+* Login using your Google account
 
 <br/>
 <br/>
@@ -18,71 +20,37 @@ Usuario (Não logado)
 <br/>
 <br/>
 
-* Visualização dos anuncios e os dados de contato do anunciante
-* Comunicação via telefone e integração Whatsapp (Sem a necessidade de adicionar aos contatos)
+* View ads and contact details of the advertiser
+* Communication with phone and Whatsapp integration (No need to add to contacts)
 
-<br/>
-<br/>
-<br/>
-
-![image](https://user-images.githubusercontent.com/58223932/95027161-d5e94000-066c-11eb-8dc5-0ffc681b9e13.png)
-
-<br/>
-<br/>
-<br/>
-
-![image](https://user-images.githubusercontent.com/58223932/95027177-f44f3b80-066c-11eb-8d35-51402271c384.png)
-
-<br/>
 <br/>
 <br/>
 
 
-![image](https://user-images.githubusercontent.com/58223932/95027183-fd400d00-066c-11eb-92e1-d14bd06f8325.png)
+User (Logged in)
+* Profile management
+* Favourite items management
+* Announcements management (Owner)
 
-<br/>
-<br/>
-<br/>
 
-Usuario (Logado)
-* Gerenciamento de perfil
-* Gerenciamento de anuncios favoritos
-* Gerenciamento de anuncios (anunciados)
 
-<br/>
-<br/>
-<br/>
-
-![image](https://user-images.githubusercontent.com/58223932/95027155-c833ba80-066c-11eb-955e-d4eccf358ffe.png)
-
-<br/>
-<br/>
-<br/>
-
-![image](https://user-images.githubusercontent.com/58223932/95027139-b18d6380-066c-11eb-947d-7a69be1ae045.png)
-
-<br/>
-<br/>
-<br/>
-
-![image](https://user-images.githubusercontent.com/58223932/95027148-bc47f880-066c-11eb-9214-f3688b53aa96.png)
-
-<br/>
-<br/>
-<br/>
-
-Tecnologias usadas:
-* Design em XML
-* Java
-* Retrofit (Para consumo dos endpoints)
-* OkHttpClient (Gerenciamento de conexão)
-* GsonConvertFactory (Serialização JSON)
-* Lottie Animation (Animações  After Effects)
-* Carouselview
+Technologies used
+* Design whit XML
+* Java 8
+* Retrofit (For API)
+* OkHttpClient (Conection management )
+* GsonConvertFactory (Serialization JSON)
+* Lottie Animation (for Animations After Effects)
+* Carouselview (For image viewing)
 * Android-SpinKit (Para loadings animados)
 
-Ambiente de desenvolvimento
+
+Development environment
 * Android Studio
 
-Mais detalhes sobre a aplicação backend e banco de dados, consultar no repositorio:
+More details about application backend and database go
 https://github.com/nuLL-cmd/aol-api
+
+
+Original project is private
+<Thanks for reading/>
